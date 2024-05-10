@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480" prefWidth="640" styleClass="">
+  <children>
+    <TableView editable="false" fixedCellSize="-1" focusTraversable="true" id="table" layoutX="0" layoutY="0" prefHeight="480" prefWidth="640" styleClass="table-view " tableMenuButtonVisible="false">
+      <placeholder>
+        <Label/>
+      </placeholder>
+      <columnResizePolicy xmlns:fx="http://javafx.com/fxml">
+        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+      </columnResizePolicy>
+      <columns>
+        <TableColumn id="process" maxWidth="5000" minWidth="10" prefWidth="160" resizable="true" sortable="false" style="-fx-alignment: center-left; " text="Process" visible="true"/>
+        <TableColumn id="pid" maxWidth="5000" minWidth="10" prefWidth="159" resizable="true" sortable="false" style="-fx-alignment: center-left; " text="ID" visible="true"/>
+        <TableColumn id="memory" maxWidth="5000" minWidth="10" prefWidth="160" resizable="true" sortable="false" style="-fx-alignment: center-left; " text="memory" visible="true"/>
+        <TableColumn id="cpuTime" maxWidth="5000" minWidth="10" prefWidth="159" resizable="true" sortable="false" style="" text="CpuTime" visible="true"/>
+      </columns>
+    </TableView>
+    <Data cursor="DEFAULT" enabled="1" id="data-table" visible="1"/>
+  </children>
+</AnchorPane>
